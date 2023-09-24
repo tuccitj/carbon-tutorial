@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './app.scss';
 import { Content, Theme } from '@carbon/react';
-import TutorialHeader from './components/TutorialHeader';
+import AppHeader from './components/AppHeader';
 import { Route, Switch, BrowserRouter } from 'react-router-dom';
 import LandingPage from './content/LandingPage';
 import RepoPage from './content/RepoPage';
@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Theme theme="g100">
-          <TutorialHeader />
+          <AppHeader />
         </Theme>
         <Content>
           <Switch>
